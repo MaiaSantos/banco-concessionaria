@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Dinoco For Cars - Cadastro de Produtos</title>
+	</head>
+	<body>
+		<style>
+			.text-input{
+				width:200px;
+			}
+		</style>
+		<h2>Cadastro de Produtos - Dinoco For Cars</h2>
+		<form action="incluirProdutos.php" method="post">
+			<fieldset >
+				Nome do produto:
+				<input type="text" 
+					   name="nome"
+					   maxlength="50" 
+					   size="50" 
+					   placeholder="Informe o nome do novo acessório" 
+					   required>
+				<br>   
+				Marca:
+				<input type="text"
+					   name="marca"
+					   maxlength="50"
+					   placeholder="Informe o nome da marca"
+					   required>
+				<br>
+				Fabricante:
+				<input type="text" 
+					   name="fabricante"
+					   maxlength="50"
+					   size="50"
+					   placeholder="Informe o nome do fabricante"
+					   required>
+				<br>
+				Entrada do produto no estoque:
+				<input type="date"
+					   name="entrada"
+					   min="2020-10-24"
+					   max="2070-12-31"
+					   required>
+				<br>
+				Saída do produto do estoque:
+				<input type="date"
+					   name="saida"
+					   min="2020-10-24"
+					   max="2070-12-31"
+					   required>
+				<br>
+				Quantidade:
+				<input type="number"
+					   name="qtde"
+					   maxlength="10"
+					   size="5"
+					   placeholder="Informe a quantidade"
+					   required>
+				<br>
+				<span>Preço:</span>
+				<input type="number"
+					   name="preco"
+					   min="0"
+					   step="0.01" 
+					   class="text-input"
+					   placeholder="Informe o preço do produto">
+				<br>
+				Garantia:
+					<input type="radio" name="garantia" value="0" checked> Não tem garantia
+					<input type="radio" name="garantia" value="1"> Tem garantia
+				<br>
+				Observação do produto:
+				<br>
+				<textarea rows="10"
+						  cols="50"
+						  placeholder="Digite a observação aqui(Opcional)..."
+						  name="obs"
+						  style="resize: none;"></textarea>
+				<br>
+				
+				</fieldset>			
+				<br>
+				<tr>
+				<button>Cadastrar</button>
+			
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title> Cadastro de vendas - Dinoco For Cars</title>
+	</head>
+	<body>
+		<h2>Cadastro de vendas - Dinoco For Cars</h2>
+		<form	action="incluirControledeVendas.php"
+				method="post"
+				enctype="multipart/form-data">
+				
+		<fieldset>
+		Data da venda:
+		<input 	type="date" 
+				name="dataDaVenda"
+				min="2020-10-01"
+				max="2025-10-01">
+		<br>
+		
+		Modelo:
+		<input 	type="text"
+				name="modelo"
+				id="modelo"
+				maxlength="30"
+				placeholder="Informe o nome do modelo do carro"
+				size="40"
+				required>
+		<br>
+		
+		Marca:
+		<input 	type="text"
+				name="marca"
+				id="marca"
+				maxlength="30"
+				placeholder="Informe a marca do carro"
+				size="40"
+				required>
+		<br>
+		
+		Ano de fabricação:
+		<input 	type="text"
+				name="anoDeFabricacao"
+				id="anoDeFabricacao"
+				maxlength="4"
+				placeholder="Informe o ano de fabricação"
+				size="25"
+				required>
+		<br>
+		
+		Cor:
+		<select name="cor">
+			<option value="Escolher"selected>Selecione a cor:</option>
+			<option value="PR" >Preto</option>
+			<option value="BR">Branco</option>
+			<option value="CI">Cinza</option>
+			<option value="VE">Vermelho</option>
+			<option value="AZ">Azul</option>
+			<option value="AMA">Amarelo</option>
+			<option value="VER">Verde</option>
+		</select>
+		<br>
+		
+		Placa do Carro:
+		<input 	type="text"
+				name="placaDoCarro"
+				id="placaDoCarro"
+				maxlength="8"
+				placeholder="Informe a placa do carro"
+				size="25">
+		<br>
+		
+		Cliente:
+			<input 	type="text"
+				name="nomeCliente"
+				id="nomeCliente"
+				maxlength="100"
+				placeholder="Informe o nome do cliente"
+				size="70"
+				required>
+		<br>
+		
+		Vendedor:
+			<input 	type="text"
+				name="vendedor"
+				id="vendedor"
+				maxlength="100"
+				placeholder="Informe o nome do vedendor"
+				size="70"
+				required>
+		<br>
+		
+		Valor:
+		<input type=number step=0.01
+				name="valor"
+				placeholder="Informe o valor"
+				required>
+		<br>
+		
+		Comissão:
+		<input type=number step=0.01
+				name="comissao"
+				placeholder="Informe a comisão"
+				required>
+		<br>
+		
+		Desconto:
+		<input type=number step=0.01
+				name="desconto"
+				placeholder="Informe o desconto">
+		<br>
+		
+		Observação: <br>
+		<textarea 	name="obs"
+					placeholder="Escreva aqui alguma observação"
+					rows="5"
+					cols="80"></textarea>
+		<hr>
+		<input type="submit" value="Cadastrar Venda">
+		</fieldset>
+		</form>
+	</body>
+</html>

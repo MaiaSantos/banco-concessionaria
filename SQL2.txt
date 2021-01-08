@@ -1,0 +1,104 @@
+-- Arthur Oliveira --
+
+CREATE table carros (
+	id			 INT auto_increment PRIMARY KEY,
+	fabricante	 VARCHAR(30),
+	modelo	     VARCHAR(30),
+	ano	 		 INT(4),
+	UF		     CHAR(2),
+	cor	  	     VARCHAR(20),
+	portas		 INT(1),
+	automatico	 BOOLEAN,
+	motor	 	 VARCHAR(20),
+	garantia	 BOOLEAN,
+	tipo		 VARCHAR(20),
+	kmRodados	 FLOAT(6,3),
+	novo 		 BOOLEAN, 	 
+	preco	 	 FLOAT(9,2),
+	estoque 	 INT(3),
+	obs	 	 	 text
+);
+
+
+-- João Vitor Maia --
+
+create table seguros (
+id 	             int auto_increment primary key,
+nome             VARCHAR(100),
+email            VARCHAR(100),
+senha	    	 VARCHAR(100),
+CNH	 	 CHAR(11),
+telefone         CHAR(9),
+CPF              CHAR(11),
+CEP  		     CHAR(8),
+modeloDoCarro    VARCHAR(100),
+ano              INT(4),
+placaDoCarro     CHAR(7),
+valor	 	     FLOAT(9,2),
+dataDeEntrada    DATE,
+tipoDeCobertura  VARCHAR(100), 
+duracaoDoSeguro  VARCHAR(100),
+apolice		 VARCHAR(100), 	
+obs				 TEXT 	 	  	 	      		 
+);
+
+
+-- Rafael Figueiredo --
+
+CREATE TABLE produtos(
+id INT(20) auto_increment primary key,
+nome VARCHAR(50),
+marca VARCHAR(50),
+fabricante VARCHAR(50),
+entrada DATE,
+saida DATE,
+qtde INT(50),
+preco float(4,2),
+garantia BOOLEAN,
+obs TEXT
+);
+
+
+-- Letícia Xavier --
+
+CREATE TABLE ControledeVendas(
+numPedido 		    	INT auto_increment primary key,
+dataDaVenda 	    	DATE,
+modelo 			    	VARCHAR (30),
+marca 			    	VARCHAR (30),
+anoDeFabricacao     	INT(4),
+cor				    	VARCHAR(20),
+placaDoCarro	    	VARCHAR (8), 
+nomeCliente		    	VARCHAR (100),
+vendedor		    	VARCHAR (100),		
+valor			    	FLOAT (7,2),
+comissao		    	FLOAT (7,2),
+desconto		    	FLOAT (7,2),
+obs				    	TEXT
+);
+
+
+-- Viviane da Silva --
+
+create table clientes(
+id int auto_increment primary key,
+nome varchar(60),
+dataNascimento date,
+cpf varchar(14),
+rg varchar(12),
+sexo char(12),
+email varchar(100),
+telefone char(12),
+celular char (12),
+pais varchar(50),
+estado varchar(50),
+cidade varchar(50),
+bairro varchar(50),
+cep char(8),
+rua varchar(50),
+numero int(11),
+complemento varchar(30),
+referencia varchar(100)
+);
+
+			

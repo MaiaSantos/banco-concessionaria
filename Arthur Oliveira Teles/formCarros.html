@@ -1,0 +1,140 @@
+<html> <!-- Salvar no diretorio www, pasta DinocoForCars(Arthur) como formCarros.html -->
+
+	<head>
+		<title>Cadastro de carros ( Dinoco )</title>
+	</head>
+	
+	<body>
+		<h1>Inclusão de carros no sistema</h1>
+		<form action="incluirCarros.php"
+			  method="post">
+		Fabricante:
+		<input type="text"
+			   name="fabricante"
+			   maxlength="30"
+			   size="40"
+			   placeholder="Insira o nome do fabricante"
+			   required>
+		<br>
+		
+		Modelo:
+		<input type="text"
+			   name="modelo"
+			   maxlength="30"
+			   size="40"
+			   placeholder="Insira o nome do modelo"
+			   required>
+		<br>
+		
+		Ano:
+		<input type="number"
+		       name="ano"
+			   min="1960"
+			   max="2020"
+			   value="0">
+		<br>	   
+		
+		UF:
+		<select name="UF">
+			<option value="RS">Rio de Janeiro</option>
+			<option value="SP" selected>São Paulo</option>
+			<option value="GO">Goiás</option>
+			<option value="PR">Paraná</option>
+			<option value="ES">Espírito Santo</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="AC">Acre</option>
+		</select>
+		<br>
+		
+		Cor:
+		<input type="text"
+			   name="cor"
+			   maxlength="20"
+			   size="30"
+			   required>
+		<br>
+		
+		N° de portas:
+		<input type="number"
+			   name="portas"
+			   min="2"
+			   max="7"
+			   required>
+		<br>
+		
+		Motor:
+		<input type="text"
+			   name="motor"
+			   maxlength="20"
+			   size="30"
+			   placeholder="Insira o nome do motor"
+			   required>
+		<br>
+		
+		Tipo:
+		<input type="text"
+			   name="tipo"
+			   maxlength="20"
+			   size="30"
+			   placeholder="Insira o tipo (Ex: Cupê, esportivo, etc.)">
+		<br>
+		
+		KM Rodados:
+		<input type="number"
+			   name="kmRodados"
+			   min="0"
+			   max="999999"
+			   value="0"
+			   required>
+		<br>
+		
+		Preço R$
+		<input type="number"
+			   name="preco"
+			   min="5000"
+			   max="200000000"
+			   required>
+		<br>	   
+		
+		QTD Estoque:
+		<input type="number"
+			   name="estoque"
+			   min="0"
+			   max="100"
+			   required>
+		<br>
+		
+		Observações:
+		
+		<input type="text"
+			   name="obs"
+			   maxlength="250"
+			   size="45">
+		
+		<fieldset>
+			<legend>Informações adicionais</legend>
+			
+			<input type="checkbox" name="automatico" value="1">
+		Carro é automático
+		<br>
+		
+		<input type="checkbox" name="novo" value="1">
+		Carro é novo
+		<br>
+		
+		<input type="checkbox" name="garantia" value="1">
+		Possuí garantia
+		<br>
+		
+		</fieldset>
+		
+		<hr>
+		
+		<input type="submit" value="Cadastrar">
+		
+			
+		
+		</form>
+	
+	</body>
+</html>
